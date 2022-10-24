@@ -25,7 +25,7 @@ def generate_fixed_matrix_picture(img_length: int = 100, n_square: int = 3, squa
             x_one += length_square
 
             x += 1
-            if x % BITS == 0:
+            if x % n_square == 0:
                 x = 0
                 x_zero = 0
                 y_zero += length_square
